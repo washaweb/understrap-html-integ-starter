@@ -11,7 +11,7 @@ var basePaths = {
 var browserSyncWatchFiles = [
     './css/*.min.css',
     './js/*.min.js',
-    './**/*.php'
+    './**/*.html'
 ];
 
 
