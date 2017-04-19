@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="dev test">
+
+	<title>Wordpress HTML Integration Toolkit</title>
+
+	<link rel='stylesheet'  href='css/theme.css' type='text/css' media='all' />
+
+</head>
+<body>
+<div class="hfeed site" id="page">
+	<!-- ******************* The Navbar Area ******************* -->
+	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
+		<a class="skip-link screen-reader-text sr-only" href="#content">Skip to content</a>
+
+		<nav class="navbar navbar-toggleable-md  navbar-inverse bg-inverse">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				
+				<a class="navbar-brand" rel="home" href="index.html">
+					<h1 class="navbar-brand mb-0">
+						Brand
+					</h1>
+				</a>
+
+				<div id="navbarNavDropdown" class="collapse navbar-collapse">
+					<ul id="main-menu" class="navbar-nav">
+						<li class="menu-item menu-item-object-page  current-menu-item current_page_item nav-item active">
+							<a title="Accueil" href="index.html" class="nav-link">
+								Accueil
+							</a>
+						</li>
+						<li class="nav-item">
+							<a title="Page" href="page.html" class="nav-link">Page</a>
+						</li>
+						<li class="menu-item menu-item-has-children nav-item dropdown">
+							<a title="Menu sample" href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Menu sample <span class="caret"></span></a>
+							<!--dropdown menu-->
+							<ul class=" dropdown-menu" role="menu">
+								<li class="nav-item">
+									<a title="Elements" href="elements.html" class="nav-link">
+										Elements
+									</a>
+								</li>
+								<li class="nav-item">
+									<a title="Forms" href="forms.html" class="nav-link">
+										Forms
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a title="Contact" href="forms.html" class="nav-link">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+		</nav>
+	</div><!-- .wrapper-navbar end -->
+
+	<!-- ******************* The Content area ******************* -->
+
+	<div class="wrapper" id="full-width-page-wrapper">
+
+	<div class="container" id="content">
+
+		<div class="row">
+
+			<div class="col-md-12 content-area" id="primary">
+
+				<main class="site-main" id="main" role="main">
+
+					
+					<article class="post-10 page type-page status-publish hentry" id="post-10">
+
+						<header class="entry-header">
+
+							<h1 class="entry-title">Contact</h1>
+
+						</header><!-- .entry-header -->
+
+						<div class="entry-content">
+
+							<div role="form" class="wpcf7" id="wpcf7-f64-p10-o1" lang="fr-FR" dir="ltr">
+
+								<div class="screen-reader-response"></div>
+								
+								<form action="/contact/#wpcf7-f64-p10-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+									<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label for="firstname">Prénom<span class="mandatory">*</span></label><span class="wpcf7-form-control-wrap your-firstname"><input type="text" name="your-firstname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="firstname" aria-required="true" aria-invalid="false" placeholder="Votre prénom"></span>
+												</div>
+											</div>
+											<div class="col-md-6">
+											<div class="form-group">
+												<label for="lastname">Nom<span class="mandatory">*</span></label><span class="wpcf7-form-control-wrap your-lastname"><input type="text" name="your-lastname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="lastname" aria-required="true" aria-invalid="false" placeholder="Votre nom"></span>
+												</div>
+											</div>
+									</div>
+									<div class="form-group">
+										<label for="email">Email<span class="mandatory">*</span></label><span class="wpcf7-form-control-wrap email">
+										<input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" id="email" aria-required="true" aria-invalid="false" placeholder="Votre email"></span>
+									</div>
+									<div class="form-group">
+										<label for="subject">Sujet<span class="mandatory">*</span></label><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="subject" aria-required="true" aria-invalid="false" placeholder="Sujet"></span>
+									</div>
+									<div class="form-group">
+										<label for="subject">Message<span class="mandatory">*</span></label><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control" id="message" aria-required="true" aria-invalid="false" placeholder="Votre message"></textarea></span>
+									</div>
+									<div class="text-right">
+										<input type="submit" value="Envoyer" class="wpcf7-form-control wpcf7-submit btn btn-primary"><span class="ajax-loader"></span>
+									</div>
+								</form>
+							</div>
+								
+						</div><!-- .entry-content -->
+
+						<footer class="entry-footer">
+							entry footer here
+						</footer><!-- .entry-footer -->
+
+					</article><!-- #post-## -->
+
+				</main><!-- #main -->
+
+			</div><!-- #primary -->
+
+		</div><!-- .row end -->
+
+	</div><!-- Container end -->
+
+</div><!-- Wrapper main-wrapper end -->
+
+<!-- ** footer **-->
+<div class="wrapper" id="wrapper-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<footer class="site-footer" id="colophon">
+					<div class="site-info">
+							<a href="http://wordpress.org/">Propulsé par WordPress</a>
+								<span class="sep"> | </span>
+							© 2017 Réalisation <a href="http://www.washaweb.com">Washaweb.com</a>
+					</div><!-- .site-info -->
+				</footer><!-- #colophon -->
+			</div><!--col end -->
+		</div><!-- row end -->
+	</div><!-- container end -->
+</div><!-- Wrapper footer-wrapper end -->
+
+</div><!-- #page -->
+
+<script type='text/javascript' src='src/js/jquery.min.js'></script>
+<script type='text/javascript' src='src/js/tether.min.js'></script>
+<script type='text/javascript' src='src/js/bootstrap4/bootstrap.min.js'></script>
+
+</body>
+</html>
